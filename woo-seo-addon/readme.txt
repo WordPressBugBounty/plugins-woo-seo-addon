@@ -2,7 +2,7 @@
 Contributors: premmerce
 Tags: woocommerce seo, yoast, opengraph, schema.org, twitter cards
 Requires at least: 4.8
-Tested up to: 6.5
+Tested up to: 6.6
 Stable tag: 2.1.6
 Requires PHP: 5.6
 License: GPLv2 or later
