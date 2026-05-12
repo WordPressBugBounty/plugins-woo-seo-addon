@@ -82,10 +82,12 @@ class LinkedData implements MetaEngineInterface
      */
     public function extendLinkedData(array $data)
     {
+
         if (isset($data['@type'])
             && $data['@type'] === 'Organization'
             && is_front_page()
         ) {
+
             $fields = array("address", "email", "telephone", "openingHours", "paymentAccepted");
 
             foreach ($fields as $field) {
@@ -107,6 +109,7 @@ class LinkedData implements MetaEngineInterface
      */
     public function extendProductData(array $data, WC_Product $product)
     {
+
         $brandTaxonomy = get_option('premmerce_seo_settings_brand_field');
 
         if (taxonomy_exists($brandTaxonomy)) {
@@ -114,6 +117,7 @@ class LinkedData implements MetaEngineInterface
             if (! empty($brands[0])) {
                 $data['brand'] = $brands[0];
             }
+
         }
 
         return $data;

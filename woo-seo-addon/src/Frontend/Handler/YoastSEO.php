@@ -23,6 +23,7 @@ class YoastSEO
         $this->config = $config;
 
         add_action('plugins_loaded', function () {
+
             if ($this->config->isEnabled('markup_ld')) {
                 $isYoastOldVersion = version_compare(WPSEO_VERSION, '11.0', '<');
                 $filter = $isYoastOldVersion ? 'wpseo_json_ld_output' :  'wpseo_schema_organization';
@@ -30,6 +31,7 @@ class YoastSEO
             }
 
             if ($this->config->isEnabled('markup_og')) {
+
                 add_action('wpseo_opengraph', array($this, 'extendYoastOG'), 40);
 
                 add_filter('wpseo_opengraph_type', array($this, 'extendYoastOGType'));

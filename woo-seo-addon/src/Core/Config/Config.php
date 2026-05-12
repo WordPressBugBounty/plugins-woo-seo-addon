@@ -111,6 +111,7 @@ class Config
 
         $defaults = array('title' => '', 'type' => 'text');
         foreach ($fields as $name => $field) {
+
             $field = array_replace($defaults, $field);
 
             $id = $settings->getId() . '_' . $name;
@@ -122,6 +123,7 @@ class Config
                     echo $this->getDescription($field);
                 }, $settings->getId());
             } else {
+
                 if ($field['type'] === 'group') {
                     foreach ($field['fields'] as $subName => $subField) {
                         register_setting($group, $id . '_' . $subName);
@@ -144,6 +146,7 @@ class Config
      */
     public function render($id)
     {
+
         if ($this->hasSettings($id)) {
             $this->renderSettingsPage($this->getSettings($id));
         }
@@ -194,6 +197,7 @@ class Config
                 call_user_func($callback, $field);
             }
         }
+
     }
 
     /**
@@ -212,6 +216,7 @@ class Config
             esc_html($label),
             $this->getDescription($data)
         );
+
     }
 
     /**
@@ -225,6 +230,7 @@ class Config
             esc_html(get_option($data['name'])),
             $this->getDescription($data)
         );
+
     }
 
     /**
@@ -247,6 +253,7 @@ class Config
             implode(PHP_EOL, $options),
             $this->getDescription($data)
         );
+
     }
 
     /**
@@ -256,6 +263,7 @@ class Config
      */
     public function getDescription(array $data)
     {
+
         if (! empty($data['description'])) {
             $class = $data['type'] == 'section' ? '' : 'description';
 

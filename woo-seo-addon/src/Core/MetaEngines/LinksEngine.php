@@ -22,6 +22,7 @@ class LinksEngine implements MetaEngineInterface
      */
     public function __construct(MetaDataStorage $storage, array $config = array())
     {
+
         /**
          * Remove canonical if rule found
          */
@@ -57,6 +58,7 @@ class LinksEngine implements MetaEngineInterface
         }
 
         echo $this->prepare($links);
+
     }
 
     /**

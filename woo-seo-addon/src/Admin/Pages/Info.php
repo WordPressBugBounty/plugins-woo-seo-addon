@@ -48,5 +48,6 @@ class Info implements SettingsInterface
                 'description' => __('For example', 'woo-seo-addon') . ': Cash, Credit Card',
             ),
         );
+
     }
 }

@@ -73,6 +73,7 @@ class MetaDataStorage
             $name = array_pop($data);
 
             $this->twitterName = $name ? '@' . $name : '';
+
         }
 
         return $this->twitterName;
@@ -193,6 +194,7 @@ class MetaDataStorage
         } elseif ($current === 2) {
             return $this->getPermalink();
         }
+
     }
 
     /**'
@@ -226,5 +228,6 @@ class MetaDataStorage
         }
 
         return $url;
+
     }
 }

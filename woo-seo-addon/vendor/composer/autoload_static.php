@@ -4,10 +4,10 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit87aef89bbbc06f3c4abf3a670a4431be
+class ComposerStaticInit7bd0076d759dc22a03900d825bd4a06d
 {
     public static $prefixLengthsPsr4 = array (
-        'P' => 
+        'P' =>
         array (
             'Premmerce\\SeoAddon\\' => 19,
             'Premmerce\\SDK\\' => 14,
@@ -15,11 +15,11 @@ class ComposerStaticInit87aef89bbbc06f3c4abf3a670a4431be
     );
 
     public static $prefixDirsPsr4 = array (
-        'Premmerce\\SeoAddon\\' => 
+        'Premmerce\\SeoAddon\\' =>
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
-        'Premmerce\\SDK\\' => 
+        'Premmerce\\SDK\\' =>
         array (
             0 => __DIR__ . '/..' . '/premmerce/wordpress-sdk/src',
         ),
@@ -32,9 +32,9 @@ class ComposerStaticInit87aef89bbbc06f3c4abf3a670a4431be
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit87aef89bbbc06f3c4abf3a670a4431be::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit87aef89bbbc06f3c4abf3a670a4431be::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit87aef89bbbc06f3c4abf3a670a4431be::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit7bd0076d759dc22a03900d825bd4a06d::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit7bd0076d759dc22a03900d825bd4a06d::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit7bd0076d759dc22a03900d825bd4a06d::$classMap;
 
         }, null, ClassLoader::class);
     }

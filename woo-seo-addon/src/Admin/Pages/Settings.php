@@ -123,5 +123,6 @@ class Settings implements SettingsInterface
         );
 
         return $settings;
+
     }
 }

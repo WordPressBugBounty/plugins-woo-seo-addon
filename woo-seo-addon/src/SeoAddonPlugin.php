@@ -75,6 +75,7 @@ class SeoAddonPlugin implements PluginInterface
     public function activate()
     {
         if (! get_option('premmerce_seo_db_version')) {
+
             update_option('premmerce_seo_db_version', self::VERSION);
 
             update_option('premmerce_seo_settings_markup_tc', 'on');
@@ -87,6 +88,7 @@ class SeoAddonPlugin implements PluginInterface
                 update_option('premmerce_seo_settings_brand_field', 'product_brand');
             }
         }
+
     }
 
     /**

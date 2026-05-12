@@ -103,9 +103,11 @@ class OpenGraph implements MetaEngineInterface
      */
     public function extendProduct(array $data)
     {
+
         $product = wc_get_product();
 
         if ($this->storage->getType() === 'product' && $product instanceof WC_Product) {
+
             if ($price = $product->get_price()) {
                 $data['og:price:amount']   = $price;
                 $data['og:price:currency'] = esc_attr(get_woocommerce_currency());

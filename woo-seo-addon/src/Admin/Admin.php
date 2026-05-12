@@ -41,6 +41,7 @@ class Admin
         $this->notifier = $notifier;
         $this->config      = new Config('premmerce_seo');
         $this->registerFilters();
+
     }
 
     /**
@@ -113,6 +114,7 @@ class Admin
     public function addRateUsText($text)
     {
         if (function_exists('get_current_screen') && get_current_screen() && get_current_screen()->parent_base === 'premmerce_seo') {
+
             $stars  = '&#9733;&#9733;&#9733;&#9733;&#9733;';
             $plugin = 'WooCommerce SEO Addon';
             $text   = sprintf(

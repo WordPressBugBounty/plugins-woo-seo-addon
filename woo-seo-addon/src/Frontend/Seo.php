@@ -63,6 +63,7 @@ class Seo
         if ($this->config->isEnabled('image_alts')) {
             add_filter('get_post_metadata', array($this, 'changeImageAlt'), 10, 3);
         }
+
     }
 
     /**
@@ -93,6 +94,7 @@ class Seo
         }
 
         return $data;
+
     }
 
     /**
@@ -131,6 +133,7 @@ class Seo
         if ($this->config->isEnabled('markup_ld')) {
             $this->engine->addEngine(new LinkedData($this->metaStorage));
         }
+
     }
 
     /**
@@ -145,6 +148,7 @@ class Seo
     public function changeImageAlt($value, $objectId, $metaKey)
     {
         if ($metaKey == '_wp_attachment_image_alt' && get_post_type() == 'product') {
+
             global $product;
 
             /** @var WC_Product $product */
