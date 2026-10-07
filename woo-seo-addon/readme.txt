@@ -1,18 +1,18 @@
 === Premmerce SEO for WooCommerce  ===
-Contributors: premmerce, freemius
-Tags: woocommerce seo, yoast, opengraph, schema.org, twitter cards
+Contributors: premmerce
+Tags: woocommerce seo, structured data, rich snippets, opengraph, twitter cards
 Requires at least: 4.8
 Tested up to: 7.1
-Stable tag: 2.1.7
+Stable tag: 2.1.8
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Premmerce SEO for WooCommerce  plugin extends the functionality of WooCommerce microdata management.
+Adds structured data (schema.org JSON-LD), Open Graph and Twitter Cards to your WooCommerce store, for rich snippets and better product SEO.
 
 == Description ==
 
-Premmerce SEO for WooCommerce  plugin extends the functionality of WooCommerce microdata management and provides all the instruments you need for your store’s SEO improvement.
+Premmerce SEO for WooCommerce extends WooCommerce structured data (schema.org JSON-LD) so search engines can show rich snippets for your products, and provides all the instruments you need for your store’s SEO improvement.
 The plugin is fully compatible with all popular SEO plugins like Yoast SEO and All in One SEO Pack.
 
 This is one of the must-have plugins for the online store SEO according to [WooCommerce SEO Audit](https://premmerce.com/complete-woocommerce-seo-guide-tips/)
@@ -21,13 +21,13 @@ Full documentation is available here: [Premmerce SEO for WooCommerce ](https://p
 
 = Major features in “Premmerce SEO for WooCommerce ” =
 
-* It displays basic online store information through the micro layout on the homepage.
+* It adds Organization schema with your store information to the homepage.
 * It displays price, stock availability and currency information in layout data on the product page.
 * It displays price, stock availability and currency information in Open Graph data on the product page.
 * It automatically generates alt text to all product images.
-* It displays the brand information in the micro layout data on the product page.
+* It adds the brand to the product schema on the product page.
 * It displays Twitter Cards markup on the all site pages.
-* It displays Social profiles information in your micro layout.
+* It adds your social profiles to the Organization schema.
 
 = Demo =
 
@@ -47,7 +47,7 @@ Plus, you can create your personal demo store and test  this plugin together wit
 
 1. Unzip the downloaded zip file.
 2. Upload the plugin folder into the “wp-content/plugins/” directory of your WordPress site.
-3. Activate “WooCommerce URL manager” from Plugins page
+3. Activate “Premmerce SEO for WooCommerce” from the Plugins page
 
 == Screenshots ==
 
@@ -80,6 +80,11 @@ You can also install this plugin manually:
 Please report security bugs found in the source code of this plugin through the [Patchstack Vulnerability Disclosure Program](https://patchstack.com/database/vdp/woo-seo-addon/). The Patchstack team will assist you with verification, CVE assignment, and notify the developers of this plugin.
 
 == Changelog ==
+
+= 2.1.8 (7th October 2026) =
+
+* Update: Updated Freemius SDK to the latest version
+* Improvement: WordPress 7.1 compatibility
 
 = 2.1.6 (20th July 2023) =
 

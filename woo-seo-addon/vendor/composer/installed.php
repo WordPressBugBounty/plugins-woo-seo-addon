@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'premmerce/woo-seo-addon',
-        'pretty_version' => '2.1.7',
-        'version' => '2.1.7.0',
-        'reference' => 'ec5c245ba29867400a9bcb5330e1b81a14d3d44e',
+        'pretty_version' => '2.1.8',
+        'version' => '2.1.8.0',
+        'reference' => '47a79fdcb786e16655cef8daaf381bd4391a7e07',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'premmerce/woo-seo-addon' => array(
-            'pretty_version' => '2.1.7',
-            'version' => '2.1.7.0',
-            'reference' => 'ec5c245ba29867400a9bcb5330e1b81a14d3d44e',
+            'pretty_version' => '2.1.8',
+            'version' => '2.1.8.0',
+            'reference' => '47a79fdcb786e16655cef8daaf381bd4391a7e07',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
