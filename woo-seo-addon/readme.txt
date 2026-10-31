@@ -3,7 +3,7 @@ Contributors: premmerce
 Tags: woocommerce seo, structured data, rich snippets, opengraph, twitter cards
 Requires at least: 4.8
 Tested up to: 7.1
-Stable tag: 2.1.8
+Stable tag: 2.1.9
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -80,6 +80,10 @@ You can also install this plugin manually:
 Please report security bugs found in the source code of this plugin through the [Patchstack Vulnerability Disclosure Program](https://patchstack.com/database/vdp/woo-seo-addon/). The Patchstack team will assist you with verification, CVE assignment, and notify the developers of this plugin.
 
 == Changelog ==
+
+= 2.1.9 (31st October 2026) =
+
+* Improvement: Declared compatibility with WooCommerce High-Performance Order Storage (HPOS)
 
 = 2.1.8 (7th October 2026) =
 

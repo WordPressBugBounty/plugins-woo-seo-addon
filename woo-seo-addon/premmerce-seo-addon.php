@@ -11,7 +11,7 @@ use Premmerce\SeoAddon\SeoAddonPlugin;
  * Plugin Name:       Premmerce SEO for WooCommerce
  * Plugin URI:        https://premmerce.com/woocommerce-seo-addon-yoast/
  * Description:       Premmerce SEO for WooCommerce  plugin extends the functionality of WooCommerce for microdata management.
- * Version:           2.1.8
+ * Version:           2.1.9
  * Author:            Premmerce
  * Author URI:        https://premmerce.com/
  * License:           GPL-2.0+
@@ -27,6 +27,13 @@ use Premmerce\SeoAddon\SeoAddonPlugin;
 if ( ! defined('WPINC')) {
     die;
 }
+
+// Orders are only touched through WooCommerce's CRUD API, so HPOS is supported.
+add_action( 'before_woocommerce_init', function () {
+	if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
+		\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+	}
+} );
 
 call_user_func(function () {
 
